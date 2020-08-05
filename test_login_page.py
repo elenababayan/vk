@@ -1,5 +1,5 @@
-# coding=utf-8
-from pages.login_form import LoginForm
+
+from .pages.login_form import LoginForm
 
 
 def test_guest_can_go_to_login_page(browser):
@@ -10,4 +10,4 @@ def test_guest_can_go_to_login_page(browser):
     # теста
     login_page.go_to_enter_login()
     login_page.go_to_enter_password()
-    login_page.puss_the_button()
+    login_page.push_the_button()

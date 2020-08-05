@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 
 
 class LoginPageLocators():
-    LOGIN = (By.ID, "#quick_email")
-    PASSWORD = (By.ID, "#quick_pass")
-    BUTTON = (By.ID, "#quick_login_button")
+    LOGIN = (By.CSS_SELECTOR, "#index_email")
+    PASSWORD = (By.
+                CSS_SELECTOR, "#index_pass")
+    BUTTON = (By.CSS_SELECTOR, "#index_login_button")
