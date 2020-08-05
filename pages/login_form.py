@@ -1,4 +1,4 @@
-
+from .locators import MessageLocators
 from .locators import LoginPageLocators
 from .base_page import BasePage
 
@@ -15,4 +15,8 @@ class LoginForm(BasePage):
     def push_the_button(self):
         button = self.browser.find_element(*LoginPageLocators.BUTTON)
         button.click()
+
+    def go_to_the_message(self):
+        letter = self.browser.find_element(*MessageLocators.MESSAGE)
+        letter.click()
 

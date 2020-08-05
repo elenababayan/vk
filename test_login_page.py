@@ -1,4 +1,4 @@
-
+import time
 from .pages.login_form import LoginForm
 
 
@@ -11,3 +11,7 @@ def test_guest_can_go_to_login_page(browser):
     login_page.go_to_enter_login()
     login_page.go_to_enter_password()
     login_page.push_the_button()
+    time.sleep(5)
+    login_page.go_to_the_message()
+
+

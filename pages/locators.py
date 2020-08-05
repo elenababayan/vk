@@ -7,4 +7,4 @@ class LoginPageLocators():
     BUTTON = (By.CSS_SELECTOR, "#index_login_button")
 
 class MessageLocators():
-    MESSAGE = (By.CSS_SELECTOR, "#l_msg.a.span.span.left_label.inl_bl")
+    MESSAGE = (By.XPATH, "//*[@id='l_msg']/a")
