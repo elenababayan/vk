@@ -13,5 +13,9 @@ def test_guest_can_go_to_login_page(browser):
     login_page.push_the_button()
     time.sleep(5)
     login_page.go_to_the_message()
+    time.sleep(3)
+    login_page.go_to_the_page_dialogue()
+    login_page.sending_a_message()
+
 
 
