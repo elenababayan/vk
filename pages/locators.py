@@ -15,3 +15,14 @@ class DialogueLocators():
 class DispatchLocators():
     DISPATCH = (By.CSS_SELECTOR, "#im_editable0")
     TRANSFER = (By.CLASS_NAME,"im-send-btn.im-chat-input--send._im_send.im-send-btn_send")
+
+class MusicLocators():
+    MUSIC = (By.XPATH, '//*[@id="l_aud"]/a')
+    SEARCH = (By.CSS_SELECTOR, "#audio_search")
+    BUTTONSEARCH = (By.CLASS_NAME,"ui_search_button_search._ui_search_button_search")
+    RESULT = (By.CLASS_NAME,"audio_row__title_inner._audio_row__title_inner")
+    ADDITION = (By.CSS_SELECTOR, "#add")
+    ADDED = (By.CLASS_NAME, "audio_page_player_btn.audio_page_player_add._audio_page_player_add audio_row__added audio_player_btn_added")
+
+
+
