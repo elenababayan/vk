@@ -32,3 +32,4 @@ class LoginForm(BasePage):
         transfer = self.browser.find_element(*DispatchLocators.TRANSFER)
         transfer.click()
 
+
