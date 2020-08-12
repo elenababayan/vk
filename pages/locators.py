@@ -20,8 +20,8 @@ class MusicLocators():
     MUSIC = (By.XPATH, '//*[@id="l_aud"]/a')
     SEARCH = (By.CSS_SELECTOR, "#audio_search")
     BUTTONSEARCH = (By.CLASS_NAME,"ui_search_button_search._ui_search_button_search")
-    RESULT = (By.CLASS_NAME,"audio_row__title_inner._audio_row__title_inner")
-    ADDITION = (By.CSS_SELECTOR, "#add")
+    RESULT = (By.CSS_SELECTOR,".audio_section__search .audio_row__title_inner._audio_row__title_inner")
+    ADDITION = (By.CLASS_NAME, "audio_page_player_btn.audio_page_player_add._audio_page_player_add")
     ADDED = (By.CLASS_NAME, "audio_page_player_btn.audio_page_player_add._audio_page_player_add audio_row__added audio_player_btn_added")
 
 
