@@ -24,5 +24,8 @@ class MusicLocators():
     ADDITION = (By.CLASS_NAME, "audio_page_player_btn.audio_page_player_add._audio_page_player_add")
     ADDED = (By.CLASS_NAME, "audio_page_player_btn.audio_page_player_add._audio_page_player_add audio_row__added audio_player_btn_added")
 
+class DownloadLocators():
+    DOWNLOAD = (By.CLASS_NAME,"ms_item.ms_item_photo._type_photo")
+    DOWNLOAD_TWO = (By.CSS_SELECTOR, "#photos_choose_upload_area_label")
 
 

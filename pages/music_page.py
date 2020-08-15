@@ -1,7 +1,7 @@
 from .base_page import BasePage
 from .locators import MusicLocators
 from .locators import LoginPageLocators
-import time
+
 class MusicPage(BasePage):
     def go_to_enter_login(self):
         login = self.browser.find_element(*LoginPageLocators.LOGIN)
