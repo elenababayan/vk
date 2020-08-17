@@ -1,6 +1,8 @@
+import time
+
+from lib2to3.pgen2 import driver
 from .base_page import BasePage
-import requests
-from .locators import DownloadLocators, LoginPageLocators, MessageLocators, DialogueLocators
+from .locators import DownloadLocators, LoginPageLocators, MessageLocators, DialogueLocators, DispatchLocators
 
 
 class DownloadPage(BasePage):
@@ -25,15 +27,17 @@ class DownloadPage(BasePage):
         dialogue = self.browser.find_element(*DialogueLocators.DIALOGUUE)
         dialogue.click()
 
-    def go_to_the_download(self, img=None):
+    def go_to_the_download(self):
         download = self.browser.find_element(*DownloadLocators.DOWNLOAD)
         download.click()
         download_two = self.browser.find_element(*DownloadLocators.DOWNLOAD_TWO)
         download_two.click()
-        p = requests.get(img)
-        out = open("/Users/bulbik/vk", "wb")
-        out.write(p.content)
-        out.close()
+        driver.find_element_by_xpath("//*[@id='content']/div/div[1]/div[3]/div[2]/div[2]/div[4]/input").sendFile("bublik\\vk\\1.png")
+        time.sleep(3)
+        transfer = self.browser.find_element(*DispatchLocators.TRANSFER)
+        transfer.click()
+
+
 
 
 

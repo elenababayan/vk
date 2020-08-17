@@ -10,7 +10,7 @@ class MessageLocators():
     MESSAGE = (By.XPATH, "//*[@id='l_msg']/a")
 
 class DialogueLocators():
-    DIALOGUUE = (By.XPATH, '//*[@id="im_dialogs"]/li[6]/div[2]/div')
+    DIALOGUUE = (By.XPATH, '//*[@id="im_dialogs"]/li[2]/div[2]/div/div[2]/span[1]/span')
 
 class DispatchLocators():
     DISPATCH = (By.CSS_SELECTOR, "#im_editable0")
