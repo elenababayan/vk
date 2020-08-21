@@ -10,7 +10,7 @@ class MessageLocators():
     MESSAGE = (By.XPATH, "//*[@id='l_msg']/a")
 
 class DialogueLocators():
-    DIALOGUUE = (By.XPATH, '//*[@id="im_dialogs"]/li[2]/div[2]/div/div[2]/span[1]/span')
+    DIALOGUUE = (By.XPATH, '/html/body/div[11]/div/div/div[2]/div[2]/div[2]/div/div/div/div/div[1]/div[2]/ul/li[2]/div[2]/div/div[2]/span[1]/span')
 
 class DispatchLocators():
     DISPATCH = (By.CSS_SELECTOR, "#im_editable0")
@@ -21,8 +21,8 @@ class MusicLocators():
     SEARCH = (By.CSS_SELECTOR, "#audio_search")
     BUTTONSEARCH = (By.CLASS_NAME,"ui_search_button_search._ui_search_button_search")
     RESULT = (By.CSS_SELECTOR,".audio_section__search .audio_row__title_inner._audio_row__title_inner")
-    ADDITION = (By.CLASS_NAME, "audio_page_player_btn.audio_page_player_add._audio_page_player_add")
-    ADDED = (By.CLASS_NAME, "audio_page_player_btn.audio_page_player_add._audio_page_player_add audio_row__added audio_player_btn_added")
+    ADDITION = (By.XPATH, "/html/body/div[11]/div/div/div[2]/div[2]/div[2]/div/div/div/div/div[2]/div[2]/div[3]/div/div[1]/div[2]/div/div/div/div/div/div/div/div[6]/div[1]/div[2]/span[1]")
+
 
 class DownloadLocators():
     DOWNLOAD = (By.CLASS_NAME,"ms_item.ms_item_photo._type_photo")

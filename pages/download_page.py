@@ -4,7 +4,6 @@ from lib2to3.pgen2 import driver
 from .base_page import BasePage
 from .locators import DownloadLocators, LoginPageLocators, MessageLocators, DialogueLocators, DispatchLocators
 
-
 class DownloadPage(BasePage):
 
     def go_to_enter_login(self):
@@ -32,7 +31,8 @@ class DownloadPage(BasePage):
         download.click()
         download_two = self.browser.find_element(*DownloadLocators.DOWNLOAD_TWO)
         download_two.click()
-        driver.find_element_by_xpath("//*[@id='content']/div/div[1]/div[3]/div[2]/div[2]/div[4]/input").sendFile("bublik\\vk\\1.png")
+        dispatch = self.browser.find_element_by_xpath("//*[@id='content']/div/div[1]/div[3]/div[2]/div[2]/div[4]/input")
+        dispatch.sendFile("bublik\\vk\\1.png")
         time.sleep(3)
         transfer = self.browser.find_element(*DispatchLocators.TRANSFER)
         transfer.click()
