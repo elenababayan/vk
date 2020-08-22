@@ -11,6 +11,7 @@ class MessageLocators():
 
 class DialogueLocators():
     DIALOGUUE = (By.XPATH, '/html/body/div[11]/div/div/div[2]/div[2]/div[2]/div/div/div/div/div[1]/div[2]/ul/li[2]/div[2]/div/div[2]/span[1]/span')
+    DIALOGUUQ = (By.XPATH, '/html/body/div[11]/div/div/div[2]/div[2]/div[2]/div/div/div/div/div[1]/div[2]/ul/li[1]/div[2]/div/span')
 
 class DispatchLocators():
     DISPATCH = (By.CSS_SELECTOR, "#im_editable0")

@@ -23,7 +23,7 @@ class DownloadPage(BasePage):
         letter.click()
 
     def go_to_the_page_dialogue(self):
-        dialogue = self.browser.find_element(*DialogueLocators.DIALOGUUE)
+        dialogue = self.browser.find_element(*DialogueLocators.DIALOGUUQ)
         dialogue.click()
 
     def go_to_the_download(self):
@@ -32,7 +32,7 @@ class DownloadPage(BasePage):
         download_two = self.browser.find_element(*DownloadLocators.DOWNLOAD_TWO)
         download_two.click()
         dispatch = self.browser.find_element_by_xpath("//*[@id='content']/div/div[1]/div[3]/div[2]/div[2]/div[4]/input")
-        dispatch.sendFile("bublik\\vk\\1.png")
+        dispatch.sendFile("C:\\Users\\DsXac\\vk\\1.png")
         time.sleep(3)
         transfer = self.browser.find_element(*DispatchLocators.TRANSFER)
         transfer.click()
