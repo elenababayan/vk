@@ -23,7 +23,7 @@ class DownloadPage(BasePage):
         letter.click()
 
     def go_to_the_page_dialogue(self):
-        dialogue = self.browser.find_element(*DialogueLocators.DIALOGUUQ)
+        dialogue = self.browser.find_element(*DialogueLocators.DIALOGUUE)
         dialogue.click()
 
     def go_to_the_download(self):
