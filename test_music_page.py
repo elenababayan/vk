@@ -1,4 +1,4 @@
-import time
+
 
 from .pages.music_page import MusicPage
 
@@ -15,6 +15,8 @@ def test_guest_can_go_to_music_page(browser):
     login_page.push_the_button()
     login_page.go_to_the_music_page()
     login_page.go_to_the_search()
+    login_page.go_to_the_result()
+    login_page.go_to_the_resul()
 
 
 
