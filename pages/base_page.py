@@ -1,4 +1,5 @@
 from selenium.common.exceptions import NoSuchElementException
+from .locators import LoginPageLocators
 
 
 class BasePage():
@@ -16,3 +17,15 @@ class BasePage():
         except (NoSuchElementException):
             return False
         return True
+
+    def go_to_enter_login(self):
+        login = self.browser.find_element(*LoginPageLocators.LOGIN)
+        login.send_keys('89094163112')
+
+    def go_to_enter_password(self):
+        password = self.browser.find_element(*LoginPageLocators.PASSWORD)
+        password.send_keys('Vfvjxrf908/')
+
+    def push_the_button(self):
+        button = self.browser.find_element(*LoginPageLocators.BUTTON)
+        button.click()
