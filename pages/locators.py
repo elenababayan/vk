@@ -25,13 +25,13 @@ class MusicLocators():
     MUSIC = (By.XPATH, '//*[@id="l_aud"]/a')
     SEARCH = (By.CSS_SELECTOR, "#audio_search")
     BUTTONSEARCH = (By.CLASS_NAME, "ui_search_button_search._ui_search_button_search")
-    RESULT = (By.CLASS_NAME, "audio_row_content._audio_row_content")
+    RESULT = (By.CLASS_NAME, "audio_row__title_inner._audio_row__title_inner")
 
     # TODO: лучше реже использовать теги
-    ADDITION = (By.CSS_SELECTOR, ".audio_page_player_btn.audio_page_player_add._audio_page_player_add")
+    PLAYER_ADD = (By.CLASS_NAME, "audio_page_player_btn.audio_page_player_add._audio_page_player_add")
 
     # TODO: неправильный селектор в классе пробел
-    ADDED = (By.CSS_SELECTOR, ".CatalogBlock__content.CatalogBlock__search_owned_audios.CatalogBlock__list")
+    ADDED = (By.CLASS_NAME, "audio_row audio_row_with_cover._audio_row._audio_row_403478867_456239253.audio_can_add audio_has_thumb audio_row2")
 
 
 class DownloadLocators():

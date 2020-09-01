@@ -1,6 +1,6 @@
 from .base_page import BasePage
 from .locators import MusicLocators
-
+import time
 
 class MusicPage(BasePage):
 
@@ -17,7 +17,8 @@ class MusicPage(BasePage):
     def go_to_the_result(self):
         result = self.browser.find_element(*MusicLocators.RESULT)
         result.click()
-        addition = self.browser.find_element(*MusicLocators.ADDITION)
+        addition = self.browser.find_element(*MusicLocators.PLAYER_ADD)
         addition.click()
         self.browser.refresh()
+        time.sleep(3)
         assert self.browser.find_element(*MusicLocators.ADDED), "No melody added"
