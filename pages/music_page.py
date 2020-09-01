@@ -17,9 +17,7 @@ class MusicPage(BasePage):
     def go_to_the_result(self):
         result = self.browser.find_element(*MusicLocators.RESULT)
         result.click()
-        self.browser.refresh()
-
-    def go_to_the_resul(self):
         addition = self.browser.find_element(*MusicLocators.ADDITION)
         addition.click()
+        self.browser.refresh()
         assert self.browser.find_element(*MusicLocators.ADDED), "No melody added"

@@ -24,7 +24,7 @@ class DownloadPage(BasePage):
         # download_two = self.browser.find_element(*DownloadLocators.DOWNLOAD_TWO)
         # download_two.click()
         dispatch = self.browser.find_element(*DownloadLocators.DISPATCH) #TODO: не здесь и плохой div div div ....
-        dispatch.send_keys(os.getcwd() + "\\1.png")
+        dispatch.send_keys(os.getcwd() + "/1.png")
         time.sleep(3)
         transfer = self.browser.find_element(*DispatchLocators.TRANSFER)
         transfer.click()
